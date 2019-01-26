@@ -12,4 +12,10 @@ task :fortune do
   # Your code goes below.
   # =====================================================================
 
+the_number = rand(5)
+  ap( "rand output is "+the_number.to_s)
+   ap( "your fortune today is - "+fortunes[the_number])
+
+  
+
 end

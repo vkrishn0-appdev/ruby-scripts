@@ -54,5 +54,7 @@ task :quote do
   # =====================================================================
   # Your code goes below.
   # =====================================================================
-
+   the_number = rand(11)
+   ap( "the random number is"+the_number.to_s)
+   ap( ""+quotations[the_number].fetch(:quote) +"--"+ quotations[the_number].fetch(:citation))
 end
