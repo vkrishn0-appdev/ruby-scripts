@@ -15,5 +15,9 @@ task :mean do
   # To find the mean (or average) of a set,
   #  - we sum up all the elements
   #  - then we divide the sum by the number of elements in the set
+  ap("Your Numbers :")
+  ap(numbers)
+  mean = numbers.each.sum/numbers.count
+  ap("Mean :"+mean.to_s)
 
 end

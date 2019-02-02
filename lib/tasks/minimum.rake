@@ -22,4 +22,10 @@ task :minimum do
   #      - I replace the previous min with it.
   #    - If not, I do nothing and go to the next element.
   #  - After we've looked at every element, what we're left with should be the real minimum
+  
+  ap("Your Numbers :")
+  ap(numbers)
+  ap("Minimum :"+numbers.sort.first.to_s)
+  
+  
 end

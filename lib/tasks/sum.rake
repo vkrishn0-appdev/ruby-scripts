@@ -17,4 +17,8 @@ task :sum do
   #  - for each number in the set,
   #    - we add it to the running total
   #  - after we've looked at every number, the running total is the sum
+  ap("Your Numbers :")
+  ap(numbers)
+  ap("Sum :"+numbers.each.sum.to_s)
+  
 end

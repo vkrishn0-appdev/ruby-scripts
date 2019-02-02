@@ -22,5 +22,9 @@ task :maximum do
   #      - I replace the previous max with it.
   #    - If not, I do nothing and go to the next element.
   #  - After we've looked at every element, what we're left with should be the real maximum
+  
+  ap("Your Numbers :")
+  ap(numbers)
+  ap("Maximum :"+numbers.sort.last.to_s)
 
 end

@@ -11,5 +11,12 @@ task :word_count do
   # The text from the file is in the variable 'text'.
   # The special word from the file is in the variable 'special_word'.
   # =====================================================================
+  ap("the words read from teh file are ->"+text)
+  ap("Character  with spaces is :"+text.length.to_s)
+  ap("Character count without spaces is :"+text.delete(" ").length.to_s)
+  ap(" The number of times story is present in the file is : "+text.scan("story").length.to_s)
+ 
+ 
+  
   
 end

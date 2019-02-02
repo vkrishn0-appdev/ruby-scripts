@@ -16,4 +16,8 @@ task :range do
   #  - Find the maximum
   #  - Find the minimum
   #  - Subtract the latter from the former
+  ap("Your Numbers :")
+  ap(numbers)
+  range = numbers.sort.last -  numbers.sort.first
+  ap("Range:"+range.to_s)
 end

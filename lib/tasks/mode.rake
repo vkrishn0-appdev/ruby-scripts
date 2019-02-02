@@ -13,4 +13,18 @@ task :mode do
   # ====
 
   # To find the mode of a set of numbers, I follow an approach similar to the one for minimum and maximum above.
+  
+  #First sort the numbers 
+  ap("Your sorted Numbers :")
+  sorted = numbers.sort
+  ap(sorted )
+  
+  #create a new array called mode_array with size = count of the sorted array
+  
+
+  freq = sorted.inject(Hash.new(0)) { |h,v| h[v] += 1; h }
+  ap(freq)
+  ap("mode is :"+sorted.max_by { |v| freq[v] }.to_s)
+    
+  
 end
